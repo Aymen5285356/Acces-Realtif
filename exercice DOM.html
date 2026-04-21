@@ -1,0 +1,45 @@
+<html>
+<head><title>Exercice DOM</title></head>
+<body>
+<form>
+	<label>Nom balise:</label> <input type="text"/>
+	<button type="button" onclick="Afficher()">Afficher</button>
+</form>
+<script>
+function Afficher(){
+//2-1
+    let nomBalise = document.querySelector("input").value;
+    let elt = document.querySelector("nomBalise");
+    if (!elt) {
+	alert("Balise non trouvée");
+	}else(alert("Non de Balise: "+elt.tagName);}
+//2-2
+    let enfants = elt.children;
+    let nomsEnfants = [];
+	for (let i = 0; i < enfants.length; i++){
+        nomsEnfants.push(enfants[i],tagName);}
+	alert("Non de enfants : "+nomsEnfants);
+//2-3
+let precedant = elt.perviousSibling;
+    if (precedant && precedant.tagName){
+		console.log(frereAvant.tagName);}
+    let parent = bouton.parentElement;
+    console.log(parent.tagName);}
+	
+//2-3 Method 2
+let precedant = elt.perviousSibling;
+    if (precedant && precedant.tagName){
+	alert("frére précédant :"+précédant.tagName);
+	}else {alert("Aucun frére précédent");}
+//2-4 method 1
+let parent = elt.parentNode;
+    if (parent && parent.tagName){
+	alert("parent est :"+parent.tagName);
+	}else {alert("Aucun parent");}
+//2-4 method 2
+alert("parent est :"+elt.parentElement.tagName);
+</script>
+</body>
+</html>
+
+ 
